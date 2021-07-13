@@ -23,7 +23,7 @@ In your existing Java Console (Command Line) Application Project:
 
 - Make your existing `Bird` class an abstract class
 
-- The `Speak()` and `Fly()` are virtual methods by default. This means that subclasses can override these methods with their own implementation. Edit your `Bird` class to the following.
+- The `speak()` and `fly()` are virtual methods by default. This means that subclasses can override these methods with their own implementation. Edit your `Bird` class to the following.
 
 ```java
 
@@ -32,19 +32,16 @@ public abstract class Bird {
     protected String name;
     protected String color;
 
-    public Bird(String name, String color)
-    {
+    public Bird(String name, String color) {
         this.name = name;
         this.color = color;
     }
 
-    public void Speak()
-    {
+    public void speak() {
         //To be implemented in subclasses
     }
 
-    public void Fly()
-    {
+    public void fly() {
         System.out.println("Hi there! I can fly.");
     }
 }
@@ -56,8 +53,8 @@ public abstract class Bird {
 ```java
 
 Bird myBird = new Bird("Tweety", "Yellow");
-myBird.Speak();
-myBird.Fly();
+myBird.speak();
+myBird.fly();
 
 ```
 
@@ -65,9 +62,9 @@ myBird.Fly();
 
 ## Exercise 4.3 - Edit the `Pigeon` class to override methods defined by the `Bird` class
 
-- In your existing `Pigeon` class, add the following implementation for the `Speak()` method by overriding the abstract class' `Speak()` method.
+- In your existing `Pigeon` class, add the following implementation for the `speak()` method by overriding the abstract class' `speak()` method.
 
-- Notice that for the `Pigeon` class, we'd like to use the default implementation for `Fly()` which is defined in the abstract class.
+- Notice that for the `Pigeon` class, we'd like to use the default implementation for `fly()` which is defined in the abstract class.
 
 
 ```java
@@ -80,8 +77,7 @@ public class Pigeon extends Bird {
     }
 
     @Override
-    public void Speak()
-    {
+    public void speak() {
         System.out.println("Yo! I'm " + name + " and I'm a " + color + " pigeon.");
     }
 }
@@ -116,14 +112,12 @@ public class Penguin extends Bird {
     }
 
     @Override
-    public void Speak()
-    {
+    public void speak() {
         System.out.println("Yo! I'm " + name + " and I'm a " + color + " penguin.");
     }
 
     @Override
-    public void Fly()
-    {
+    public void fly() {
         System.out.println("Whoops, I can't fly. Waddle waddle.");
     }
 }
@@ -139,8 +133,8 @@ public class Penguin extends Bird {
 ```java
 
 Penguin pingu = new Penguin("Pingu", "Black & White");
-pingu.Speak();
-pingu.Fly();
+pingu.speak();
+pingu.fly();
 
 ```
 

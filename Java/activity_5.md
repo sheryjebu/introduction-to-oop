@@ -29,9 +29,9 @@ In your Java Console (Command Line) Application Project:
 
 public interface DanceImpl {
 
-    void Spin();
-    void DoTheCaterpillar();
-    void Jump();
+    void spin();
+    void doTheCaterpillar();
+    void jump();
 
 }
 
@@ -50,34 +50,28 @@ public abstract class Bird implements DanceImpl {
     protected String name;
     protected String color;
 
-    public Bird(String name, String color)
-    {
+    public Bird(String name, String color) {
         this.name = name;
         this.color = color;
     }
 
-    public void Speak()
-    {
+    public void speak() {
         //To be implemented in subclasses
     }
 
-    public void Fly()
-    {
+    public void fly() {
         System.out.println("Hi there! I can fly.");
     }
 
-    public void Spin()
-    {
+    public void spin() {
         System.out.println(name + " spin!");
     }
 
-    public void DoTheCaterpillar()
-    {
+    public void doTheCaterpillar() {
         System.out.println(name + " do the wriggly woo!");
     }
 
-    public void Jump()
-    {
+    public void jump() {
         System.out.println(name + " jump in the air!");
     }
 }
@@ -92,9 +86,9 @@ public abstract class Bird implements DanceImpl {
 
 ```java
 
-pippa.Spin();
-pippa.DoTheCaterpillar();
-pippa.Jump();
+pippa.spin();
+pippa.doTheCaterpillar();
+pippa.jump();
 
 ```
 
@@ -102,9 +96,9 @@ pippa.Jump();
 
 ```java
 
-pingu.Spin();
-pingu.DoTheCaterpillar();
-pingu.Jump();
+pingu.spin();
+pingu.doTheCaterpillar();
+pingu.jump();
 
 ```
 

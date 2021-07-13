@@ -61,8 +61,8 @@ public class Pigeon extends Bird {
 ```java
 
 Pigeon pippa = new Pigeon("Pippa", "Grey");
-pippa.Speak();
-pippa.Fly();
+pippa.speak();
+pippa.fly();
 
 ```
 

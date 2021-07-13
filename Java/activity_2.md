@@ -51,10 +51,10 @@ These attributes and methods (behaviours) are often called 'members' of a class.
 You can use pen and paper or any digital drawing tool you prefer.
 
 Attributes:
-- Name, Color
+- name, color
 
 Methods:
-- Speak, Fly
+- speak, fly
 
 ---
 
@@ -75,19 +75,16 @@ public class Bird {
     protected String name;
     protected String color;
 
-    public Bird(String name, String color)
-    {
+    public Bird(String name, String color) {
         this.name = name;
         this.color = color;
     }
 
-    public void Speak()
-    {
+    public void speak() {
         System.out.println("My name is " + name + " and I am a " + color + " bird.");
     }
 
-    public void Fly()
-    {
+    public void fly() {
         System.out.println("I'm " + name + " and I can fly high in the blue sky!");
     }
 }
@@ -103,8 +100,8 @@ public class Bird {
 ```java
 
 Bird myBird = new Bird("Tweety", "Yellow");
-myBird.Speak();
-myBird.Fly();
+myBird.speak();
+myBird.fly();
 
 ```
 
