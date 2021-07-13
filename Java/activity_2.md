@@ -62,7 +62,7 @@ Methods:
 
 - Create a new Java Console (Command Line) Application Project.
 
-- You can refer to the IntelliJ Documentation on how to create a Java Console (Command Line) Application Project [here](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html). Throughout the programme, we recommend you conduct your own research using the IntelliJ documentation.
+- You can refer to the IntelliJ documentation on how to create a Java Console (Command Line) Application Project [here](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html). Throughout the programme, we recommend you conduct your own research using the documentation.
 
 - Add an empty class called `Bird`
 
@@ -72,8 +72,8 @@ Methods:
 
 public class Bird {
 
-    private String name;
-    private String color;
+    protected String name;
+    protected String color;
 
     public Bird(String name, String color)
     {
