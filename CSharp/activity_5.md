@@ -61,7 +61,7 @@ public abstract class Bird : IDance
 
     public virtual void Fly() 
     {
-        Console.WriteLine($"Hi there! I can fly.");
+        Console.WriteLine("Hi there! I can fly.");
     }
 
     public void Spin() 

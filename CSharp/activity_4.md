@@ -46,7 +46,7 @@ public abstract class Bird
     public virtual void Fly() 
     {
         //Default implementation
-        Console.WriteLine($"Hi there! I can fly.");
+        Console.WriteLine("Hi there! I can fly.");
     }
 }
 
