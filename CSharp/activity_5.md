@@ -21,9 +21,9 @@ Any class that implements an interface must implement all of the members defined
 
 Let's use an interface to add some cool dance moves functionality to our existing `Bird` class so that all the subclasses that inherit `Bird` class can do some dancing too.
 
-In your existing .NET Console application project:
+In your existing .NET 5+ Console application project:
 
-- Add an empty interface called `IDance`
+- Add an interface called `IDance`
 
 ```csharp
 

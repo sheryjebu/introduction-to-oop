@@ -23,7 +23,7 @@ In your existing .NET 5+ Console application project:
 
 - Make your existing `Bird` class an abstract class
 
-- Add the `virtual` keyword to the `Speak()` and `Fly()` methods. This means that subclasses can override the method with their own implementation.
+- Add the `virtual` keyword to the `Speak()` and `Fly()` methods. This means that subclasses can override these methods with their own implementation.
 
 ```csharp
 
@@ -136,7 +136,7 @@ public class Penguin : Bird
 
 ```csharp
 
-Penguin pingu = new Pigeon("Pingu", "Black & White");
+Penguin pingu = new Penguin("Pingu", "Black & White");
 pingu.Speak();
 pingu.Fly();
 
