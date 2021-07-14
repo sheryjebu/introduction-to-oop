@@ -12,7 +12,7 @@ A set of activities for different language tracks designed to provide learners w
 
 - For the C# language track, we recommend you utilise the community version of Visual Studio 2019 or Visual Studio for Mac available to download for free [here](https://visualstudio.microsoft.com/downloads/).
 
-- For the Java language track, we recommend you utilise the community edition of[IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
+- For the Java language track, we recommend you utilise the community edition of [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 
 ## What's Next?
 
