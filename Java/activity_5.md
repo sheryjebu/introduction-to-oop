@@ -17,7 +17,23 @@ Any class that implements an interface must implement all of the members defined
 
 ---
 
-## Exercise 5.1 - Create an interface `DanceImpl`
+## Exercise 5.1 - Representing interfaces in Unified Modelling Language (UML) diagrams
+
+- Can you do some research to find out how to represent interfaces in UML diagrams?
+
+- Draw a diagram to show the `Bird` class implementing the interface `DanceImpl`
+
+- The `DanceImpl` interface contains the following methods that classes implementing the interface will provide an implementation for:
+
+- Spin
+- DoTheCaterpillar
+- Jump
+
+You can use pen and paper or any digital drawing tool you prefer.
+
+---
+
+## Exercise 5.2 - Create an interface `DanceImpl`
 
 Let's use an interface to add some cool dance moves functionality to our existing `Bird` class so that all the subclasses that inherit `Bird` class can do some dancing too.
 
@@ -37,7 +53,7 @@ public interface DanceImpl {
 
 ```
 
-## Exercise 5.2 - Implement the interface `DanceImpl` in Bird
+## Exercise 5.3 - Implement the interface `DanceImpl` in Bird
 
 Let's make our existing `Bird` class implement the interface `DanceImpl`.
 
@@ -80,7 +96,7 @@ public abstract class Bird implements DanceImpl {
 
 ---
 
-## Exercise 5.3 - Run your console application
+## Exercise 5.4 - Run your console application
 
 - Add the following code to the `main` method in the `Main` class beneath your existing code for pippa the `Pigeon`.
 
