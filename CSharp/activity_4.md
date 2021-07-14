@@ -69,13 +69,13 @@ myBird.Fly();
 - Can you do some research to find out how to represent an abstract class in a UML diagram? 
 - Hint: It could be just a small change to the font-style of your class e.g. *italics*
 
-An example solution to the diagram is available [here](./solutions/activity_4_exercise_4.3.png).
+An example solution to the diagram is available [here](../solutions/activity_4_exercise_4.3.png).
 
 ---
 
 ## Exercise 4.4 - Edit the `Pigeon` class to override methods defined by the `Bird` class
 
-- In your existing `Pigeon` class, add the following implementation for the `Speak()` method by overriding the abstract class' `Speak()` method.
+- In your existing `Pigeon` class, add the following implementation for the `Speak()` method by overriding the abstract class' `Speak()` method. This will allow the `Pigeon` to be able to `Speak()`, as it's related to the `Bird`, but now it has a different form i.e. it can speak in a different way.
 
 - Notice that for the `Pigeon` class, we'd like to use the default implementation for `Fly()` which is defined in the abstract class.
 
@@ -121,7 +121,7 @@ Delicious pizza!
 
 - Add a `Penguin` subclass to your diagram. The `Penguin` extends the base class `Bird`.
 
-An example solution to the diagram is available [here](./solutions/activity_4_exercise_4.6.png).
+An example solution to the diagram is available [here](../solutions/activity_4_exercise_4.6.png).
 
 ---
 

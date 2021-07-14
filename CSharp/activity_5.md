@@ -31,7 +31,7 @@ Any class that implements an interface must implement all of the members defined
 
 You can use pen and paper or any digital drawing tool you prefer.
 
-An example solution to the diagram is available [here](./solutions/activity_5_exercise_5.1.png).
+An example solution to the diagram is available [here](../solutions/activity_5_exercise_5.1.png).
 
 ---
 

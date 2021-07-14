@@ -60,7 +60,7 @@ Methods:
 
 The methods don't have a return data type as they will be writing output strings to the console.
 
-An example solution to the diagram is available [here](./solutions/activity_2_exercise_2.3.png).
+An example solution to the diagram is available [here](../solutions/activity_2_exercise_2.3.png).
 
 ---
 

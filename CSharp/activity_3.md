@@ -38,7 +38,7 @@ The `Bird` class is a type of `Animal`, but is more **specific** and defines the
 
 You can use pen and paper or any digital drawing tool you prefer.
 
-An example solution to the diagram is available [here](./solutions/activity_3_exercise_3.2.png).
+An example solution to the diagram is available [here](../solutions/activity_3_exercise_3.2.png).
 
 ---
 
