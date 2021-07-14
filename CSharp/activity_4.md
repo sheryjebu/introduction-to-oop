@@ -64,7 +64,16 @@ myBird.Fly();
 
 ---
 
-## Exercise 4.3 - Edit the `Pigeon` class to override methods defined by the `Bird` class
+## Exercise 4.3 - Amend your UML diagram to represent the `Bird` as an abstract class
+
+- Can you do some research to find out how to represent an abstract class in a UML diagram? 
+- Hint: It could be just a small change to the font-style of your class e.g. *italics*
+
+An example solution to the diagram is available [here](./solutions/activity_4_exercise_4.3.png).
+
+---
+
+## Exercise 4.4 - Edit the `Pigeon` class to override methods defined by the `Bird` class
 
 - In your existing `Pigeon` class, add the following implementation for the `Speak()` method by overriding the abstract class' `Speak()` method.
 
@@ -84,12 +93,17 @@ public class Pigeon : Bird
     {
         Console.WriteLine($"Yo! I'm {Name} and I'm a {Color} pigeon.");
     }
+
+    public void EatPizza() 
+    {
+        Console.WriteLine("Delicious pizza!");
+    }
 }
 
 ```
 
 ---
-## Exercise 4.4 - Run your console application
+## Exercise 4.5 - Run your console application
 
 - Run your console application. You should see the following output to your console.
 
@@ -97,12 +111,21 @@ public class Pigeon : Bird
 
 Yo! I'm Pippa and I'm a Grey pigeon.
 Hi there! I can fly.
+Delicious pizza!
 
 ```
 
 ---
 
-## Exercise 4.5 - Create the additional subclass `Penguin` to extend the base class `Bird`
+## Exercise 4.6 - Add the `Penguin` class to your UML diagram
+
+- Add a `Penguin` subclass to your diagram. The `Penguin` extends the base class `Bird`.
+
+An example solution to the diagram is available [here](./solutions/activity_4_exercise_4.6.png).
+
+---
+
+## Exercise 4.7 - Create the additional subclass `Penguin` to extend the base class `Bird`
 
 - Add an empty class called `Penguin`
 - Add the following code to make the `Penguin` class extend base class `Bird`
@@ -130,7 +153,7 @@ public class Penguin : Bird
 
 ---
 
-## Exercise 4.6 - Run your console application
+## Exercise 4.8 - Run your console application
 
 - Add the following code to the `main` method in the `program.cs` file beneath your existing code
 
@@ -148,6 +171,7 @@ pingu.Fly();
 
 Yo! I'm Pippa and I'm a Grey pigeon.
 Hi there! I can fly.
+Delicious pizza!
 Hi! I'm Pingu and I'm a Black & White penguin.
 Whoops, I can't fly. Waddle waddle.
 

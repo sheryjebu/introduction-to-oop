@@ -31,6 +31,8 @@ Any class that implements an interface must implement all of the members defined
 
 You can use pen and paper or any digital drawing tool you prefer.
 
+An example solution to the diagram is available [here](./solutions/activity_5_exercise_5.1.png).
+
 ---
 
 ## Exercise 5.2 - Create an interface `IDance`
@@ -128,6 +130,7 @@ pingu.Jump();
 
 Yo! I'm Pippa and I'm a Grey pigeon.
 Hi there! I can fly.
+Delicious pizza!
 Pippa spin!
 Pippa do the wriggly woo!
 Pippa jump in the air!
