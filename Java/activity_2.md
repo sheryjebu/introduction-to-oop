@@ -117,7 +117,7 @@ I'm Tweety and I can fly high in the blue sky!
 
 ### What's next?
 
-Head over to [Introduction to Inheritance in Activity 3](./activity_3).
+Head over to [Introduction to Inheritance in Activity 3](./activity_3.md).
 
 ---
 

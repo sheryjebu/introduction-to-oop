@@ -29,7 +29,7 @@ In systems thinking, for a complex system each component within the system doesn
 
 ### What's next?
 
-Head over to [Introduction to Object-Oriented Programming (OOP) in Activity 2](./activity_2).
+Head over to [Introduction to Object-Oriented Programming (OOP) in Activity 2](./activity_2.md).
 
 ---
 
