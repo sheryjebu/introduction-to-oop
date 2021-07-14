@@ -7,6 +7,7 @@ A set of activities for different language tracks designed to provide learners w
 - Pick a language track
 - Work through the activities in order for that language track
 - Each activity contains *Key Study Notes* highlighting key concepts for your learning
+- The `solutions` folder contains the solutions to the UML diagramming exercises. We recommend you try the exercises first before looking at the final solution for the best learning experience.
 
 ## Pre-Requisites
 
