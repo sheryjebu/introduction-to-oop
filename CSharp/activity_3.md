@@ -80,7 +80,7 @@ I'm Pippa and I can fly high in the blue sky!
 
 ### What's next?
 
-Wouldn't it be nice to have more flexibility for subclasses to implement methods how they like. Head over to [Introduction to Polymorphism in Activity 4](./activity_4) to learn more.
+Wouldn't it be nice to have more flexibility for subclasses to implement methods how they like. Head over to [Introduction to Polymorphism in Activity 4](./activity_4.md) to learn more.
 
 ---
 
