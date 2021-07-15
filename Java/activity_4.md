@@ -60,9 +60,18 @@ myBird.fly();
 
 ---
 
-## Exercise 4.3 - Edit the `Pigeon` class to override methods defined by the `Bird` class
+## Exercise 4.3 - Amend your UML diagram to represent the `Bird` as an abstract class
 
-- In your existing `Pigeon` class, add the following implementation for the `speak()` method by overriding the abstract class' `speak()` method.
+- Can you do some research to find out how to represent an abstract class in a UML diagram? 
+- Hint: It could be just a small change to the font-style of your class e.g. *italics*
+
+An example solution to the diagram is available [here](../solutions/activity_4_exercise_4.3.png).
+
+---
+
+## Exercise 4.4 - Edit the `Pigeon` class to override methods defined by the `Bird` class
+
+- In your existing `Pigeon` class, add the following implementation for the `Speak()` method by overriding the abstract class' `Speak()` method. This will allow the `Pigeon` to be able to `Speak()`, as it's related to the `Bird`, but now it has a different form i.e. it can speak in a different way.
 
 - Notice that for the `Pigeon` class, we'd like to use the default implementation for `fly()` which is defined in the abstract class.
 
@@ -80,12 +89,16 @@ public class Pigeon extends Bird {
     public void speak() {
         System.out.println("Yo! I'm " + name + " and I'm a " + color + " pigeon.");
     }
+
+    public void eatPizza() {
+        System.out.println("Delicious pizza!");
+    }
 }
 
 ```
 
 ---
-## Exercise 4.4 - Run your console application
+## Exercise 4.5 - Run your console application
 
 - Run your console application. You should see the following output to your console.
 
@@ -93,12 +106,21 @@ public class Pigeon extends Bird {
 
 Yo! I'm Pippa and I'm a Grey pigeon.
 Hi there! I can fly.
+Delicious pizza!
 
 ```
 
 ---
 
-## Exercise 4.5 - Create the additional subclass `Penguin` to extend the base class `Bird`
+## Exercise 4.6 - Add the `Penguin` class to your UML diagram
+
+- Add a `Penguin` subclass to your diagram. The `Penguin` extends the base class `Bird`.
+
+An example solution to the diagram is available [here](../solutions/activity_4_exercise_4.6.png).
+
+---
+
+## Exercise 4.7 - Create the additional subclass `Penguin` to extend the base class `Bird`
 
 - Add an empty class called `Penguin`
 - Add the following code to make the `Penguin` class extend base class `Bird`
@@ -126,7 +148,7 @@ public class Penguin extends Bird {
 
 ---
 
-## Exercise 4.6 - Run your console application
+## Exercise 4.8 - Run your console application
 
 - Add the following code to the `main` method in the `Main` class beneath your existing code
 
@@ -144,6 +166,7 @@ pingu.fly();
 
 Yo! I'm Pippa and I'm a Grey pigeon.
 Hi there! I can fly.
+Delicious pizza!
 Hi! I'm Pingu and I'm a Black & White penguin.
 Whoops, I can't fly. Waddle waddle.
 
