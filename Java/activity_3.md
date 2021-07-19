@@ -27,7 +27,18 @@ The `Bird` class is a type of `Animal`, but is more **specific** and defines the
 
 - Draw a diagram to show a `Pigeon` subclass extending the base class `Bird`
 
+- The `Pigeon` class will inherit the following attributes and methods from the `Bird` class:
+
+- Name
+- Color
+- Speak
+- Fly
+
+- In addition to this, the `Pigeon` will also have a method called `EatPizza`, without a return data type as when the method is called, it will write an output string to the console. Only the `Pigeon` can `EatPizza`.
+
 You can use pen and paper or any digital drawing tool you prefer.
+
+An example solution to the diagram is available [here](../solutions/activity_3_exercise_3.2.png).
 
 ---
 
@@ -37,6 +48,7 @@ In your existing Java Console (Command Line) Application Project:
 
 - Add an empty class called `Pigeon`
 - Add the following code to make the `Pigeon` extend base class `Bird`
+- Add the method `EatPizza` to `Pigeon`
 
 ```java
 
@@ -47,6 +59,10 @@ public class Pigeon extends Bird {
     //The name and color parameters are passed to the Bird constructor
     public Pigeon(String name, String color) {
         super(name, color);
+    }
+
+    public void eatPizza() {
+        System.out.println("Delicious pizza!");
     }
 }
 
@@ -63,6 +79,7 @@ public class Pigeon extends Bird {
 Pigeon pippa = new Pigeon("Pippa", "Grey");
 pippa.speak();
 pippa.fly();
+pippa.eatPizza();
 
 ```
 
@@ -74,6 +91,7 @@ My name is Tweety and I am a Yellow bird.
 I'm Tweety and I can fly high in the blue sky!
 My name is Pippa and I am a Grey bird.
 I'm Pippa and I can fly high in the blue sky!
+Delicious pizza!
 
 ```
 ---
