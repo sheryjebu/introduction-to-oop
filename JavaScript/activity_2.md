@@ -120,6 +120,10 @@ My name is Tweety and I am a Yellow bird.
 I'm Tweety and I can fly high in the blue sky!
 
 ```
+
+#### Note: Under the hood, your Bird class is being converted into a Prototypal Inheritance model — the above way of writing classes in JavaScript is just 'syntactic sugar'. 
+
+
 ---
 
 ### What's next?
