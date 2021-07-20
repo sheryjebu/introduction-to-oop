@@ -8,6 +8,9 @@ A set of activities for different language tracks designed to provide learners w
 
 - For the Java language track, we recommend you utilise the community edition of [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 
+- For the JavaScript language track, we recommend you utilise Visual Studio Code which you can download [here](https://code.visualstudio.com/docs/setup/setup-overview).
+
+
 ## How to Use
 
 - Create a new Github repository called `introduction-to-oop-project` in your personal Github account
