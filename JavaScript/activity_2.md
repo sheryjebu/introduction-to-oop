@@ -44,9 +44,11 @@ A Class Diagram is part of the Unified Modelling Language (UML). You can read mo
 
 ## Pre-Requisites
 
-Before moving onto the next exercise which utilises JavaScript ECMAScript 2015 classes make sure you are comfortable using and writing [Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects) in JavaScript. 
+Before moving onto the next exercise which utilises JavaScript ECMAScript 2015 classes, make sure you are comfortable using JavaScript [Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects). 
 
 ## Exercise 2.3 - Draw a class diagram to represent a `Bird` class
+
+Before the release of JavaScript ECMAScript 2015 the problem of inheritance was solved using JavaScript Prototypes. For the sake of brevity we won't be going into Prototype Inheritance in this tutorial, instead focussing on modern JavaScript "Classes". However, if you are interested in learning about Prototype Inheritance you can read about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 In this exercise, use the Class Diagram from the Unified Modelling Language (UML) to model a `Bird` class with the following attributes and methods (behaviours).
 
@@ -70,9 +72,9 @@ An example solution to the diagram is available [here](../solutions/activity_2_e
 
 ## Exercise 2.4 - Translate the class diagram into code to create a `Bird` class
 
-- Create a new JavaScript Console Application Project.
+- Create a new JavaScript Command Line project with node.js.
 
-You can refer to Visual Studio Codes Node.js/JavaScript documentation tutorial on how to create and run a simple command line project [Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial).
+You can refer to Visual Studio Codes Node.js/JavaScript documentation tutorial on how to create and run a simple command line project [here](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial).
 
 - Add an empty class called `Bird`
 
@@ -80,41 +82,33 @@ You can refer to Visual Studio Codes Node.js/JavaScript documentation tutorial o
 
 ```JavaScript
 
-public class Bird
-{
-    public string Name { get; private set; }
-    public string Color { get; private set; }
+class Bird {
+  constructor(name, color) {
+    this.name = name;
+    this.color = color;
+  }
 
-    public Bird(string name, string color)
-    {
-        Name = name;
-        Color = color;
-    }
+  speak() {
+    console.log(`My name is ${this.name} and I am a ${this.color} bird.`);
+  };
 
-    public void Speak() 
-    {
-        Console.WriteLine($"My name is {Name} and I am a {Color} bird.");
-    }
-
-    public void Fly() 
-    {
-        Console.WriteLine($"I'm {Name} and I can fly high in the blue sky!");
-    }
+  fly() {
+    console.log(`I'm ${this.name} and I can fly high in the blue sky!`);
+  };
 }
-
 ```
 
 ---
 
 ## Exercise 2.5 - Run your console application
 
-- Add the following code to the `main` method in the `program.cs` file.
+- Add the following code to your JavaScript file underneath your bird class.
 
-```csharp
+```JavaScript
 
-Bird myBird = new Bird("Tweety", "Yellow");
-myBird.Speak();
-myBird.Fly();
+const myBird = new Bird("Tweety", "Yellow");
+myBird.speak();
+myBird.fly();
 
 ```
 
