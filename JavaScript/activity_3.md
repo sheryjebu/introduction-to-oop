@@ -1,4 +1,5 @@
 # Activity 3
+
 ## Introduction to Inheritance
 
 ## Exercise 3.1 - Introductory Reading - Inheritance
@@ -15,7 +16,7 @@ In the Animal Kingdom, we can have a class hierarchy like the following:
 Animal -> Bird -> Pigeon
 ```
 
-The `Animal` class is highest in the hierarchy, so it contains the blueprint for what it means to be an `Animal`. 
+The `Animal` class is highest in the hierarchy, so it contains the blueprint for what it means to be an `Animal`.
 
 The `Bird` class is a type of `Animal`, but is more **specific** and defines the attributes and behaviours most common to Birds. A `Pigeon` is a type of `Bird` and it's even more specific.
 
@@ -34,7 +35,7 @@ The `Bird` class is a type of `Animal`, but is more **specific** and defines the
 - Speak
 - Fly
 
-- In addition to this, the `Pigeon` will also have a method called `EatPizza`, without a return data type as when the method is called, it will write an output string to the console. Only the `Pigeon` can `EatPizza`.
+- In addition to this, the `Pigeon` will also have a method called `eatPizza`, without a return data type as when the method is called, it will write an output string to the console. Only the `Pigeon` can `eatPizza`.
 
 You can use pen and paper or any digital drawing tool you prefer.
 
@@ -48,35 +49,17 @@ In your existing JavaScript project:
 
 - Add an empty class called `Pigeon`
 - Add the following code to make the `Pigeon` extend base class `Bird`
-- Add the method `EatPizza` to `Pigeon`
-
-```csharp
-
-//The Pigeon extends the base class Bird
-public class Pigeon : Bird
-{
-    //The Pigeon constructor calls the base class Bird constructor
-    //The name and color parameters are passed to the Bird constructor
-    public Pigeon(string name, string color) : base(name, color)
-    {
-    }
-
-    public void EatPizza() 
-    {
-        Console.WriteLine("Delicious pizza!");
-    }
-}
-
-```
-
-
+- Add the method `eatPizza` to `Pigeon`
 
 ```JavaScript
+
+//Pigeon extends the base class Bird using the 'extends' keyword
 class Pigeon extends Bird {
   constructor(name, color) {
-    super(name, color); // call the super class constructor and pass in the name and color parameters
+    //The 'super' keyword is used to access and call functions on an object's parent i.e. Bird
+    super(name, color);
   }
-
+  //eatPizza() is a method specific to Pigeon
   eatPizza() {
     console.log("Delicious pizza!");
   }
@@ -88,7 +71,7 @@ class Pigeon extends Bird {
 
 ## Exercise 3.4 - Run your console application
 
-- Add the following code to the `main` method in the `program.cs` file beneath your code from Activity 2.
+- Add the following code beneath your code from Activity 2.
 
 ```JavaScript
 
@@ -99,7 +82,7 @@ pippa.eatPizza();
 
 ```
 
-- Run your console application. You should see the following output to your console.
+- Run your application. You should see the following output to your console.
 
 ```
 
@@ -110,7 +93,10 @@ I'm Pippa and I can fly high in the blue sky!
 Delicious pizza!
 
 ```
+
 ---
+
+Pigeon has inherited methods and properties from Bird!
 
 ### What's next?
 
@@ -120,4 +106,4 @@ Wouldn't it be nice to have more flexibility for subclasses to implement methods
 
 ### Key Study Notes
 
-- *Inheritance* - We call the (parent) class the **base** or **superclass** and any particular (child) class that inherits (i.e. extends) from this base class the **subclass**. This is like Bear cubs inheriting traits from their parents.
+- _Inheritance_ - We call the (parent) class the **base** or **superclass** and any particular (child) class that inherits (i.e. extends) from this base class the **subclass**. This is like Bear cubs inheriting traits from their parents.

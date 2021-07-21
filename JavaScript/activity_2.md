@@ -78,12 +78,14 @@ You can refer to Visual Studio Codes Node.js/JavaScript documentation tutorial o
 
 - Add an empty class called `Bird`
 
-- Add the following code to create the `Bird` class
+- In your Project JavaScript file add the following code to create the `Bird` class
 
 ```JavaScript
 
 class Bird {
+    // The constructor method creates and initializes an object for our `Bird` class
   constructor(name, color) {
+      // The 'this' keyword attaches properties to this new `Bird` object
     this.name = name;
     this.color = color;
   }
@@ -112,7 +114,14 @@ myBird.fly();
 
 ```
 
-- Run your console application. You should see the following output to your console.
+### The 'new' keyword 
+- creates a new, empty `Bird` object {}
+- sets the value of the `this` keyword to be the new, empty object
+- calls the constructor method 
+- passes parameters to the constructor method
+
+
+- Now run your console application. You should see the following output to your console:
 
 ```
 
@@ -121,7 +130,7 @@ I'm Tweety and I can fly high in the blue sky!
 
 ```
 
-#### Note: Under the hood, your Bird class is being converted into a Prototypal Inheritance model — the above way of writing classes in JavaScript is just 'syntactic sugar'. 
+#### Note: Under the hood, your Bird class is being converted into a [Prototypal Inheritance model](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) — the above way of writing classes in JavaScript is just [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar). 
 
 
 ---
