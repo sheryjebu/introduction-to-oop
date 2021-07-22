@@ -96,9 +96,41 @@ Delicious pizza!
 
 ```
 
+Pigeon has inherited methods and properties from Bird!
+
 ---
 
-Pigeon has inherited methods and properties from Bird!
+## Optional Challenge
+
+- Can you add another method on the `Pigeon` class called `Sleep` that writes the following string to the console `"I'm a sleeping pigeon"`?
+
+<details>
+<summary>Click here to see the solution</summary>
+<pre>
+
+```csharp
+public class Pigeon : Bird
+{
+    public Pigeon(string name, string color) : base(name, color)
+    {
+    }
+
+    public void EatPizza() 
+    {
+        Console.WriteLine("Delicious pizza!");
+    }
+
+    public void Sleep() 
+    {
+        Console.WriteLine("I'm a sleeping pigeon");
+    }
+}
+```
+
+</pre>
+</details>
+
+---
 
 ### What's next?
 
