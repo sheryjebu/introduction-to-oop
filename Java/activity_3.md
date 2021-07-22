@@ -94,7 +94,10 @@ I'm Pippa and I can fly high in the blue sky!
 Delicious pizza!
 
 ```
+
 ---
+
+Pigeon has inherited methods and properties from Bird!
 
 ### What's next?
 
