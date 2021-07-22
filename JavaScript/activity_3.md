@@ -46,7 +46,7 @@ An example solution to the diagram is available [here](../solutions/activity_3_e
 
 In your existing JavaScript project:
 
-- Add an empty class called `Pigeon`
+- Underneath your code, add an empty class called `Pigeon`
 - Add the following code to make the `Pigeon` extend base class `Bird`
 - Add the method `eatPizza` to `Pigeon`
 

@@ -20,6 +20,8 @@ However it is useful to know about this concept because many languages *do* supp
 
 - Interfaces were invented as a way of defining the things an object can do i.e. their jobs. Another benefit is it lets unrelated classes do the same job.
 
+- For example, if we had a `Person` class and subclasses of `Mum`, `Developer`, `Chef` and they are unrelated; but we wanted all of them to be able to sing then we can make an interface containing the method name for `sing()`. It is up to the `Mum`, `Developer` and `Chef` to sing in their own ways.
+
 - This essentially means any class that implements an interface *must* implement *all* of the members defined in the interface. A 'contract' is also a term used to describe interfaces. This means that developers can have a higher degree of control on setting restrictions on what the classes implementing an interface must do.
 
 **A class can only inherit from a *single* base class, but a class can implement *many* interfaces.**

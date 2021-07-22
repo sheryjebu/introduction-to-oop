@@ -46,7 +46,8 @@ class Pigeon extends Bird {
 - Run your console application. You should see the following output to your console.
 
 ```
-
+My name is Tweety and I am a Yellow bird.
+I'm Tweety and I can fly high in the blue sky!
 Yo! I'm Pippa and I'm a Grey pigeon.
 I'm Pippa and I can fly high in the blue sky!
 Delicious pizza!
