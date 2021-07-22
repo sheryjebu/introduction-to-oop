@@ -3,17 +3,27 @@
 
 ## Exercise 5.1 - Introductory Reading - Interfaces
 
-### What is an 'Multiple inheritance'?
+### What is 'Multiple inheritance'?
 
-Multiple inheritance is where a class can inherit from more than one parent class. This could lead to something called the **Diamond Problem** where the same state or behaviour can be defined in multiple parent classes, so the subclass doesn't know which one to inherit from. 
+Multiple inheritance is a programming concept where a subclass can inherit from more than one parent class. This can be useful as there might be many subclasses, that want some or all of various parent classes members or behaviours. However! Be aware! This can lead to something called the **Diamond Problem** where the same state or behaviour is defined in multiple parent classes, so the subclass doesn't know which one to inherit from. 🐛
 
 **C# doesn't support multiple inheritance. A subclass can only inherit from one base class.**
 
 ### What is an 'Interface'?
 
-Interfaces were invented as a way of defining the things objects can do i.e. their jobs.
+**Interfaces were invented as a way of defining the things an object can do i.e. their jobs**
+- Interfaces are a way of getting round the Diamond of Death issue. If there is behaviour you would like many classes to implement, you can create an interface.
 
-Any class that implements an interface must implement all of the members defined in the interface; a 'contract' is a term often used to describe interfaces. A class can only inherit from a **single** base class, but a class can implement **many** interfaces.
+- Interfaces were invented as a way of defining the things an object can do i.e. their jobs. Another benefit is it lets unrelated classes do the same job.
+
+- For example, if we had a `Person` class and subclasses of `Mum`, `Developer`, `Chef` and they are unrelated; but we wanted all of them to be able to sing then we can make an interface containing the method name for `sing()`. It is up to the `Mum`, `Developer` and `Chef` to sing in their own ways.
+
+- This essentially means any class that implements an interface *must* implement *all* of the members defined in the interface. A 'contract' is also a term used to describe interfaces. This means that developers can have a higher degree of control on setting restrictions on what the classes implementing an interface must do.
+
+**A class can only inherit from a *single* base class, but a class can implement *many* interfaces.**
+
+- Interfaces can help keep code D.R.Y (don't repeat yourself)
+If many classes share a behaviour, you can abstract this class into an interface. This saves repetition in your code.
 
 ---
 

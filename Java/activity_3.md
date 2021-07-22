@@ -94,6 +94,41 @@ I'm Pippa and I can fly high in the blue sky!
 Delicious pizza!
 
 ```
+
+Pigeon has inherited methods and properties from Bird!
+
+---
+
+## Optional Challenge
+
+- Can you add another method on the `Pigeon` class called `Sleep` that writes the following string to the console `"I'm a sleeping pigeon"`?
+
+<details>
+<summary>Click here to see the solution</summary>
+<pre>
+
+```java
+
+public class Pigeon extends Bird {
+
+    public Pigeon(String name, String color) {
+        super(name, color);
+    }
+
+    public void eatPizza() {
+        System.out.println("Delicious pizza!");
+    }
+
+    public void Sleep() {
+        System.out.println("I'm a sleeping pigeon");
+    }
+}
+
+```
+
+</pre>
+</details>
+
 ---
 
 ### What's next?

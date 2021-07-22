@@ -105,6 +105,8 @@ pingu.fly();
 
 ```
 
+My name is Tweety and I am a Yellow bird.
+I'm Tweety and I can fly high in the blue sky!
 Yo! I'm Pippa and I'm a Grey pigeon.
 I'm Pippa and I can fly high in the blue sky!
 Delicious pizza!
