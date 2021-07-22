@@ -3,9 +3,9 @@
 
 ## Exercise 5.1 - Introductory Reading - Interfaces
 
-### What is an 'Multiple inheritance'?
+### What is 'Multiple inheritance'?
 
-Multiple inheritance is a programming concept where a subclass can inherit from more than one parent class. This can be useful as there might be many subclasses, that want some or all of various parent classes. However! Be aware! This can lead to something called the **Diamond Problem** where the same state or behaviour is defined in multiple parent classes, so the subclass doesn't know which one to inherit from. 🐛
+Multiple inheritance is a programming concept where a subclass can inherit from more than one parent class. This can be useful as there might be many subclasses, that want some or all of various parent classes members or behaviours. However! Be aware! This can lead to something called the **Diamond Problem** where the same state or behaviour is defined in multiple parent classes, so the subclass doesn't know which one to inherit from. 🐛
 
 Some programming languages have solved this problem with language restrictions i.e. you can't have multiple inheritance in C# or Java. If you try and inherit from multiple parent classes your IDE flags the issue.
 
@@ -56,9 +56,22 @@ Therefore many JS developers have developed their own solutions to create some s
 
 For example:
 	
-[This person](https://geedew.com/basic-interfaces-in-nodejs/) makes an interface in a basic class way
+[This person](https://geedew.com/basic-interfaces-in-nodejs/) makes an interface in a basic class way i.e. by creating a parent class or 'interface' 😉 that checks for a certain condition, and throws an error if the condition isn't met:
+
+```JavaScript
+
+class MenuInterface {
+constructor() {
+    // the condition 
+    if(!this.getItems) { 
+      // the thing all menu interfaces must do or have (adding a level of security/control)
+      throw new Error("Menu's must have items!");  
+    }
+  }
+}
+```
 	
-And [this person](https://codeburst.io/interfaces-in-javascript-with-es6-naive-implementation-91b703110a09) proposed a solution based on symbols
+[This person](https://codeburst.io/interfaces-in-javascript-with-es6-naive-implementation-91b703110a09) proposed a solution based on the ES6 Symbols.
 	
 Other people have developed their own custom [npm packages](https://www.npmjs.com/package/es6-interface) to create an interface-like offering to the JS language 
 
@@ -70,7 +83,7 @@ This [course](https://codecraft.tv/courses/angular/es6-typescript/classinterface
 
 ### What's next?
 
-JavaScript has other concepts which are important, as already touched upon e.g. prototypal chains. JS has cool design patterns e.g. module patterns like IIFEs etc. We will be going into these in detail on the course to come. 
+JavaScript has other concepts which are important, as already touched upon e.g. prototypal chains. JS has cool design patterns e.g. module patterns like IIFEs. We will be going into these in detail on the course to come. 
 
 For now, feel free to head back to review the OOP concepts again. We encourage you to do some of your own research and experimentation in your own time to explore these concepts further.
 
