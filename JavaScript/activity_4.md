@@ -9,7 +9,7 @@ Polymorphism means many shapes or forms. Building on top of what we know about c
 
 If we use animals as an example, all animals might speak and therefore our animal classes might have a `speak()` method inherited from their `Animal` class parent. But the way that each `Animal` speaks might be different. A `Dog` barks, a `Bird` sings etc. 
 
-To use Polymorphism in JavaScript we override the methods we want to change. Overriding methods in JavaScript is simple - we just redefine them. 
+To use Polymorphism in JavaScript we override the methods we want to change. Overriding methods in JavaScript is simple - we just redefine them.
 
 ---
 
