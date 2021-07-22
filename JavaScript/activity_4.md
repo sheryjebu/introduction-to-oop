@@ -117,6 +117,12 @@ Whoops, I can't fly. Waddle waddle.
 ```
 ---
 
+## Exercise 4.9 - Create a Parrot
+
+In this exercise, create your very own `Parrot` class that extends the base class `Bird`. Have it `speak()` a funny message!
+
+---
+
 ### What's next?
 
 Head over to [Introduction to Interfaces in Activity 5](./activity_5.md) to learn more.
