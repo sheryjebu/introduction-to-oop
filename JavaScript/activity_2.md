@@ -11,17 +11,17 @@ For example, I have a class which sets out the blueprint on how to make a ginger
 
 ### What is OOJS?
 
-JavaScript isn't a classic Object Oriented programming language like Java or C#. 
+JavaScript isn't a classic Object-Oriented programming language like Java or C#. 
 
-OOJS (Object Oriented JavaScript) is the name given to describe how JavaScript can mimic Object Oriented Programming features.
+OOJS (Object-Oriented JavaScript) is the name given to describe how JavaScript can mimic Object-Oriented Programming features.
 
-JavaScript is a Prototype based Object Oriented programming model. It creates objects using other objects as blueprints. To implement Inheritance it manipulates something called the 'prototype chain'. 
+JavaScript has a Prototype-based Object-Oriented Programming model. It creates objects using other objects as blueprints. To implement inheritance, it manipulates something called the 'prototype chain'.
 
 ### What does that mean?!
 
-For the sake of this tutorial don't worry about Prototypes just yet - we will be covering this later on in the course (phew!)
+For the sake of this tutorial don't worry about Prototypes just yet - we will be covering this later on in the course (phew!).
 
-For now, just know that JavaScript isn't a truely Object Oriented language. It *mimics* the behaviour of classes with syntactic sugar (i.e the fancy, complicated behaviour has been hidden away under the 'class' keyword so we don't have to worry about it)
+For now, just know that JavaScript isn't a truly Object-Oriented language. It *mimics* the behaviour of classes with syntactic sugar (i.e the fancy, complicated behaviour has been hidden away under the 'class' keyword so we don't have to worry about it).
 
 Now, back to OOP concepts!
 
@@ -60,11 +60,11 @@ A Class Diagram is part of the Unified Modelling Language (UML). You can read mo
 
 ## Pre-Requisites
 
-Before moving onto the next exercise which utilises JavaScript ECMAScript 2015 classes, make sure you are comfortable using JavaScript [Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects). 
+Before moving onto the next exercise which utilises JavaScript ECMAScript 2015 classes, make sure you are comfortable using JavaScript [Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects).
 
 ## Exercise 2.3 - Draw a class diagram to represent a `Bird` class
 
-Before the release of JavaScript ECMAScript 2015 the problem of inheritance was solved using JavaScript Prototypes. For the sake of brevity we won't be going into Prototype Inheritance in this tutorial, instead focussing on modern JavaScript "Classes". However, if you are interested in learning about Prototype Inheritance you can read about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+Before the release of JavaScript ECMAScript 2015, the problem of inheritance was solved using JavaScript Prototypes. For the sake of brevity we won't be going into Prototypal Inheritance in this tutorial, instead focussing on modern JavaScript 'Classes'. However, if you are interested in learning about Prototypal Inheritance you can read about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
 
 In this exercise, use the Class Diagram from the Unified Modelling Language (UML) to model a `Bird` class with the following attributes and methods (behaviours).
 
@@ -90,7 +90,7 @@ An example solution to the diagram is available [here](../solutions/activity_2_e
 
 - Create a new JavaScript Command Line project with node.js.
 
-You can refer to Visual Studio Codes Node.js/JavaScript documentation tutorial on how to create and run a simple command line project [here](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial).
+You can refer to Visual Studio Code's Node.js/JavaScript documentation tutorial on how to create and run a simple command line project [here](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial).
 
 - Add an empty class called `Bird`
 
@@ -99,9 +99,9 @@ You can refer to Visual Studio Codes Node.js/JavaScript documentation tutorial o
 ```JavaScript
 
 class Bird {
-    // The constructor method creates and initializes an object for our `Bird` class
+  // The constructor method creates and initializes an object for our `Bird` class
   constructor(name, color) {
-      // The 'this' keyword attaches properties to this new `Bird` object
+    // The 'this' keyword attaches properties to this new `Bird` object
     this.name = name;
     this.color = color;
   }
