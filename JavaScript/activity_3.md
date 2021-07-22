@@ -1,5 +1,4 @@
 # Activity 3
-
 ## Introduction to Inheritance
 
 ## Exercise 3.1 - Introductory Reading - Inheritance

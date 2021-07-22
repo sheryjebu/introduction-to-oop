@@ -116,7 +116,7 @@ Whoops, I can't fly. Waddle waddle.
 
 ### What's next?
 
-Head over to [Method Chaining in Activity 5](./activity_5.md) to learn more.
+Head over to [Introduction to Interfaces in Activity 5](./activity_5.md) to learn more.
 
 ---
 

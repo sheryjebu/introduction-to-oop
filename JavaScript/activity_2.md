@@ -9,6 +9,22 @@ Object-Oriented Programming (OOP) is a Software Engineering paradigm to enable t
 
 For example, I have a class which sets out the blueprint on how to make a gingerbread loaf cake. If I'm hungry, I can make many objects (instances) of a gingerbread loaf cake. Yummy! This process has a fancy name called 'instantiation'.
 
+### What is OOJS?
+
+JavaScript isn't a classic Object Oriented programming language like Java or C#. 
+
+OOJS (Object Oriented JavaScript) is the name given to describe how JavaScript can mimic Object Oriented Programming features.
+
+JavaScript is a Prototype based Object Oriented programming model. It creates objects using other objects as blueprints. To implement Inheritance it manipulates something called the 'prototype chain'. 
+
+### What does that mean?!
+
+For the sake of this tutorial don't worry about Prototypes just yet - we will be covering this later on in the course (phew!)
+
+For now, just know that JavaScript isn't a truely Object Oriented language. It *mimics* the behaviour of classes with syntactic sugar (i.e the fancy, complicated behaviour has been hidden away under the 'class' keyword so we don't have to worry about it)
+
+Now, back to OOP concepts!
+
 ### Can you tell me what the Four Pillars of OOP are?
 
 The Four Pillars of OOP are:

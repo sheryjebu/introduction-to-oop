@@ -1,254 +1,83 @@
 # Activity 5
-## Introduction to Method Chaining
+## Introduction to Interfaces
 
-## Exercise 5.1 - Introductory Reading - Method Chaining
+## Exercise 5.1 - Introductory Reading - Interfaces
 
-### What is 'Method Chaining'?
+### What is an 'Multiple inheritance'?
 
-Method chaining is where instead of calling methods one after another like this:
+Multiple inheritance is a programming concept where a subclass can inherit from more than one parent class. This can be useful as there might be many subclasses, that want some or all of various parent classes. However! Be aware! This can lead to something called the **Diamond Problem** where the same state or behaviour is defined in multiple parent classes, so the subclass doesn't know which one to inherit from. 🐛
 
-```JavaScript
+Some programming languages have solved this problem with language restrictions i.e. you can't have multiple inheritance in C# or Java. If you try and inherit from multiple parent classes your IDE flags the issue.
 
-pingu.speak();
-pingu.fly();
-pingu.eatACroissant();
+**JavaScript doesn't support multiple inheritance. A subclass can only inherit from one base class.**
 
-```
+However it is useful to know about this concept because many languages *do* support multiple inheritance. Importantly, this issue is part of the reason interfaces were invented.
 
-You 'chain' your methods together, one after another, like this:
+### What is an 'Interface'?
 
-```JavaScript
+- Interfaces are a way of solving the Diamond of Death. 
+If there is behaviour you would like many classes to inherit, you can create an interface.
 
-pingu.speak().fly().eatACroissant();
+- Interfaces were invented as a way of defining the things an object can do i.e. their jobs
+This essentially means any class that implements an interface *must* implement *all* of the members defined in the interface. A 'contract' is also a term used to describe interfaces. 
 
-```
+This gives a level of security to your code i.e. you can expect it to work a certain way because your interface only allows for it to be used or interpreted in a defined way 
 
-Notice how this is neater and saves us some code.
+**A class can only inherit from a *single* base class, but a class can implement *many* interfaces.**
 
-
-## Exercise 5.1 - Chaining our Penguin methods
-
-- Go to your Penguin class 
-
-- Where your code says:
-
-```JavaScript
-
-const pingu = new Penguin("Pingu", "Black & White");
-pingu.speak()
-pingu.fly();
-
-
-```
-
-- Update your code so you 'chain' your methods together like this:
-
-```JavaScript
-
-const pingu = new Penguin("Pingu", "Black & White");
-pingu.speak().speak().fly().fly();
-
-
-```
-
-- Run your console application. 
-
-Oh oh! Did you get an error?
-
-Your error should look something like this:
-
-
-> pingu.speak().speak().fly().fly();
-             ^
-> TypeError: Cannot read property 'speak' of undefined
->    at Object.<anonymous> (/Users/elliejudge/Desktop/oopjs.js:58:14)
->    at Module._compile (node:internal/modules/cjs/loader:1109:14)
-
-
-Why are we getting an error?
-
-Well unless we use the 'return' keyword to return a value from a function in JavaScript - we get 'undefined'. 
-
-Ok, but what should we be returning?
+- Interfaces can help keep code D.R.Y (don't repeat yourself)
+If many classes share a behaviour you can abstract this class into an interface. This saves repetition in your code.
 
 ---
 
-## Exercise 5.2 - Returning the `this` keyword
+## Exercise 5.1 - Representing interfaces in Unified Modelling Language (UML) diagrams
 
-Update your `Penguin` class so it returns the `this` keyword:
+- Can you do some research to find out how to represent interfaces in UML diagrams?
 
-```JavaScript
-class Penguin extends Bird {
-    constructor(name, color) {
-        super(name, color); 
-    }
+- Draw a diagram to show the `Bird` class implementing the interface `IDance`
 
-    speak() {
-        console.log(`Hi! I'm ${this.name} and I'm a ${this.color} penguin.`);
-        // We are returning 'this' object (our Penguin)
-        return this;
-    };
+- The `IDance` interface contains the following methods that classes implementing the interface will provide an implementation for:
 
-    fly() {
-        console.log(`Whoops, I can't fly. Waddle waddle.`);
-        // We are returning 'this' object (our Penguin)
-        return this;
-    }
-}
+- Spin
+- DoTheCaterpillar
+- Jump
 
-```
+You can use pen and paper or any digital drawing tool you prefer.
 
-- Run your console application. You should see the following output to your console.
-
-Hi! I'm Pingu and I'm a Black & White penguin.
-Hi! I'm Pingu and I'm a Black & White penguin.
-Whoops, I can't fly. Waddle waddle.
-Whoops, I can't fly. Waddle waddle.
-
-Great! So we're not getting undefined anymore and we can shorten our code by chaining the different Penguin methods together one after the other. 
-
-But why is this?
-
-## Understanding the `this` keyword
-
- This returns the instance of the object
-
- If you console.log(this) you can see `this` is our Penguin object
-
- If we're returning that object (instead of undefined) then we can chain another method on it.
-
- This is called method binding ?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Let's use an interface to add some cool dance moves functionality to our existing `Bird` class so that all the subclasses that inherit `Bird` class can do some dancing too.
-
-In your existing .NET 5+ Console application project:
-
-- Add an interface called `IDance`
-
-```csharp
-
-public interface IDance
-{
-    void Spin();
-    void DoTheCaterpillar();
-    void Jump();
-}
-
-```
-
-## Exercise 5.3 - Implement the interface `IDance` in Bird
-
-Let's make our existing `Bird` class implement the interface `IDance`.
-
-- Implement `IDance` in the `Bird` class
-
-```csharp
-
-public abstract class Bird : IDance
-{
-    public string Name { get; private set; }
-    public string Color { get; private set; }
-
-    public Bird(string name, string color)
-    {
-        Name = name;
-        Color = color;
-    }
-
-    public virtual void Speak() 
-    {
-    }
-
-    public virtual void Fly() 
-    {
-        Console.WriteLine("Hi there! I can fly.");
-    }
-
-    public void Spin() 
-    {
-        Console.WriteLine($"{Name} spin!");
-    }
-
-    public void DoTheCaterpillar()
-    {
-        Console.WriteLine($"{Name} do the wriggly woo!");
-    }
-
-    public void Jump()
-    {
-        Console.WriteLine($"{Name} jump in the air!");
-    }
-}
-
-```
+An example solution to the diagram is available [here](../solutions/activity_5_exercise_5.1.png).
 
 ---
 
-## Exercise 5.4 - Run your console application
+## Some bad news for JavaScript developers! 
 
-- Add the following code to the `main` method in the `program.cs` file beneath your existing code for pippa the `Pigeon`.
+Unlike C# or Java, JavaScript doesn't have an inbuilt way to use Interfaces (as of July 2021). 
 
-```csharp
+Therefore many JS developers have developed their own solutions to create some sort of interface-like thing (not a true interface) - that mimics some of the behaviours interfaces offer. The solutions differ in approaches and pros and cons. Therefore there is no standardised way of achieving interfaces (yet!). 
 
-pippa.Spin();
-pippa.DoTheCaterpillar();
-pippa.Jump();
+For example:
+	
+[This person](https://geedew.com/basic-interfaces-in-nodejs/) makes an interface in a basic class way
+	
+And [this person](https://codeburst.io/interfaces-in-javascript-with-es6-naive-implementation-91b703110a09) proposed a solution based on symbols
+	
+Other people have developed their own custom [npm packages](https://www.npmjs.com/package/es6-interface) to create an interface-like offering to the JS language 
 
-```
+[TypeScript](https://www.typescriptlang.org/docs/handbook/interfaces.html) is increasingly preferred especially amongst node.js backend devs (mostly due to the lack of built-in waya of achieving interfaces in JavaScript).
 
-- Add the following code to the `main` method in the `program.cs` file beneath your existing code for pingu the `Penguin`.
+This [course](https://codecraft.tv/courses/angular/es6-typescript/classinterface/) is brilliant if you'd like to learn more about JavaScript ES6 features and TypeScript
 
-```csharp
-
-pingu.Spin();
-pingu.DoTheCaterpillar();
-pingu.Jump();
-
-```
-
-- Run your console application. You should see the following output to your console.
-
-```
-
-Yo! I'm Pippa and I'm a Grey pigeon.
-Hi there! I can fly.
-Delicious pizza!
-Pippa spin!
-Pippa do the wriggly woo!
-Pippa jump in the air!
-Hi! I'm Pingu and I'm a Black & White penguin.
-Whoops, I can't fly. Waddle waddle.
-Pingu spin!
-Pingu do the wriggly woo!
-Pingu jump in the air!
-
-```
 ---
 
 ### What's next?
 
-Your learning journey doesn't stop here! Feel free to head back to review the concepts again. We encourage you to do some of your own research and experimentation in your own time to explore these concepts further.
+JavaScript has other concepts which are important, as already touched upon e.g. prototypal chains. JS has cool design patterns e.g. module patterns like IIFEs etc. We will be going into these in detail on the course to come. 
+
+For now, feel free to head back to review the OOP concepts again. We encourage you to do some of your own research and experimentation in your own time to explore these concepts further.
 
 ---
 
 ### Key Study Notes
 
 - *Interfaces* - invented as a way of defining the things objects can do i.e. their jobs. Any class that implements an interface must implement all of the members defined in the interface.
+
+- *Interfaces* - although JavScript doesn't have built in Interfaces just yet, developers have come up with a variety of different workarounds 
