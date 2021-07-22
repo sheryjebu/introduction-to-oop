@@ -97,6 +97,38 @@ Delicious pizza!
 
 Pigeon has inherited methods and properties from Bird!
 
+---
+
+## Optional Challenge
+
+- Can you add another method on the `Pigeon` class called `Sleep` that writes the following string to the console `"I'm a sleeping pigeon"`?
+
+<details>
+<summary>Click here to see the solution</summary>
+<pre>
+
+```JavaScript
+
+class Pigeon extends Bird {
+    constructor(name, color) {
+        super(name, color);
+        this.name = name;
+        this.color = color;
+    }
+    eatPizza() {
+        console.log("Delicious pizza!")
+    }
+    sleep() {
+        console.log("I'm a sleeping pigeon")
+    }
+}
+
+```
+
+</pre>
+</details>
+
+
 ### What's next?
 
 Wouldn't it be nice to have more flexibility for subclasses to implement methods how they like. Head over to [Introduction to Polymorphism in Activity 4](./activity_4.md) to learn more.
