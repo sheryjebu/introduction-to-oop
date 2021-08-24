@@ -82,10 +82,8 @@ public abstract class Bird implements DanceImpl {
         this.name = name;
         this.color = color;
     }
-
-    public void speak() {
-        //To be implemented in subclasses
-    }
+    
+    public abstract void speak();
 
     public void fly() {
         System.out.println("Hi there! I can fly.");
