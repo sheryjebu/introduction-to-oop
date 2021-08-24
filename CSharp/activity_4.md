@@ -38,10 +38,10 @@ public abstract class Bird
         Color = color;
     }
 
-    public virtual void Speak() 
-    {
-        //To be implemented in subclasses
-    }
+    //This method is marked with Abstract keyword
+    //This means that any classes extending on Bird must implement this
+    //Abstract methods don't have a method body
+    public abstract void Speak();
 
     public virtual void Fly() 
     {
@@ -67,7 +67,7 @@ myBird.Fly();
 ## Exercise 4.3 - Amend your UML diagram to represent the `Bird` as an abstract class
 
 - Can you do some research to find out how to represent an abstract class in a UML diagram? 
-- Hint: It could be just a small change to the font-style of your class e.g. *italics*
+- Hint: It could be just a small change to the font-style of your class/abstract method e.g. *italics*
 
 An example solution to the diagram is available [here](../solutions/activity_4_exercise_4.3.png).
 
@@ -119,7 +119,7 @@ Delicious pizza!
 
 ## Exercise 4.6 - Add the `Penguin` class to your UML diagram
 
-- Add a `Penguin` subclass to your diagram. The `Penguin` extends the base class `Bird`.
+- Update and add a `Penguin` subclass to your diagram. The `Penguin` extends the base class `Bird` and it will override the methods `speak()` and `fly()`.
 
 An example solution to the diagram is available [here](../solutions/activity_4_exercise_4.6.png).
 
