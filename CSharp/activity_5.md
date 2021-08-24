@@ -83,9 +83,7 @@ public abstract class Bird : IDance
         Color = color;
     }
 
-    public virtual void Speak() 
-    {
-    }
+    public abstract void speak();
 
     public virtual void Fly() 
     {

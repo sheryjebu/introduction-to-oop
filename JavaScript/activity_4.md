@@ -58,7 +58,7 @@ Delicious pizza!
 
 ## Exercise 4.3 - Add the `Penguin` class to your UML diagram
 
-- Add a `Penguin` subclass to your diagram. The `Penguin` extends the base class `Bird`.
+- Update and add a `Penguin` subclass to your diagram. The `Penguin` extends the base class `Bird` and it will override the methods `speak()` and `fly()`.
 
 An example solution to the diagram is available [here](../solutions/activity_4_exercise_4.6.png).
 
