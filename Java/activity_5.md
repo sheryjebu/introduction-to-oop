@@ -31,9 +31,9 @@ If many classes share a behaviour, you can abstract this class into an interface
 
 - Can you do some research to find out how to represent interfaces in UML diagrams?
 
-- Draw a diagram to show the `Bird` class implementing the interface `DanceImpl`
+- Draw a diagram to show the `Bird` class implementing the interface `Dance`
 
-- The `DanceImpl` interface contains the following methods that classes implementing the interface will provide an implementation for:
+- The `Dance` interface contains the following methods that classes implementing the interface will provide an implementation for:
 
 - Spin
 - DoTheCaterpillar
@@ -45,17 +45,17 @@ An example solution to the diagram is available [here](../solutions/activity_5_e
 
 ---
 
-## Exercise 5.2 - Create an interface `DanceImpl`
+## Exercise 5.2 - Create an interface `Dance`
 
 Let's use an interface to add some cool dance moves functionality to our existing `Bird` class so that all the subclasses that inherit `Bird` class can do some dancing too.
 
 In your Java Console (Command Line) Application Project:
 
-- Add an interface called `DanceImpl`
+- Add an interface called `Dance`
 
 ```java
 
-public interface DanceImpl {
+public interface Dance {
 
     void spin();
     void doTheCaterpillar();
@@ -65,15 +65,15 @@ public interface DanceImpl {
 
 ```
 
-## Exercise 5.3 - Implement the interface `DanceImpl` in Bird
+## Exercise 5.3 - Implement the interface `Dance` in Bird
 
-Let's make our existing `Bird` class implement the interface `DanceImpl`.
+Let's make our existing `Bird` class implement the interface `Dance`.
 
-- Implement `DanceImpl` in the `Bird` class
+- Implement `Dance` in the `Bird` class
 
 ```java
 
-public abstract class Bird implements DanceImpl {
+public abstract class Bird implements Dance {
 
     protected String name;
     protected String color;
