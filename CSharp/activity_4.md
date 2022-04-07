@@ -19,7 +19,7 @@ Abstract classes enable Software Engineers to collate functionality that subclas
 
 ## Exercise 4.2 - Make the base class `Bird` an abstract class
 
-In your existing .NET 5+ Console application project:
+In your existing .NET 6 Console application project:
 
 - Make your existing `Bird` class an abstract class
 

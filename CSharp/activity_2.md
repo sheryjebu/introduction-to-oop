@@ -66,9 +66,9 @@ An example solution to the diagram is available [here](../solutions/activity_2_e
 
 ## Exercise 2.4 - Translate the class diagram into code to create a `Bird` class
 
-- Create a new .NET 5+ Console Application Project.
+- Create a new .NET 6 Console Application Project.
 
-You can refer to the Microsoft Documentation on how to do this for [Visual Studio 2019](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio) or [Visual Studio for Mac](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-mac). Throughout the programme, we recommend you conduct your own research using the Microsoft Documentation.
+You can refer to the Microsoft Documentation on how to do this for [Visual Studio 2022](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio) or [Visual Studio for Mac](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-mac). Throughout the programme, we recommend you conduct your own research using the Microsoft Documentation.
 
 - Add an empty class called `Bird`
 

@@ -44,7 +44,7 @@ An example solution to the diagram is available [here](../solutions/activity_3_e
 
 ## Exercise 3.3 - Translate the class diagram into code to create a subclass `Pigeon` class which extends the base class `Bird`
 
-In your existing .NET 5+ Console application project:
+In your existing .NET 6 Console application project:
 
 - Add an empty class called `Pigeon`
 - Add the following code to make the `Pigeon` extend base class `Bird`
