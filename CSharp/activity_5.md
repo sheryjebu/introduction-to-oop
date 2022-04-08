@@ -49,7 +49,7 @@ An example solution to the diagram is available [here](../solutions/activity_5_e
 
 Let's use an interface to add some cool dance moves functionality to our existing `Bird` class so that all the subclasses that inherit `Bird` class can do some dancing too.
 
-In your existing .NET 5+ Console application project:
+In your existing .NET 6 Console application project:
 
 - Add an interface called `IDance`
 
