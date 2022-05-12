@@ -1,0 +1,13 @@
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/bin/Debug/netcoreapp3.1/OOP_Exercises.deps.json
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/bin/Debug/netcoreapp3.1/OOP_Exercises.runtimeconfig.json
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/bin/Debug/netcoreapp3.1/OOP_Exercises.runtimeconfig.dev.json
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/bin/Debug/netcoreapp3.1/OOP_Exercises.dll
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/bin/Debug/netcoreapp3.1/OOP_Exercises.pdb
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.csproj.AssemblyReference.cache
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.AssemblyInfoInputs.cache
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.AssemblyInfo.cs
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.csproj.CoreCompileInputs.cache
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.dll
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.pdb
+/Users/sheryjebu/TechReturnsGIT/introduction-to-oop/CSharp/OOP_Exercises/OOP_Exercises/obj/Debug/netcoreapp3.1/OOP_Exercises.genruntimeconfig.cache
